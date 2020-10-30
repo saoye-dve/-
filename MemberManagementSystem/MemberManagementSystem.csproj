@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C65616A-FCC9-4AF9-8D03-80EC21BDD136}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MemberManagementSystem</RootNamespace>
+    <AssemblyName>MemberManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.3.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls, Version=2.2.3.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.3.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=2.2.3.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.3.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.3.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Vision, Version=2.2.3.0, Culture=neutral, PublicKeyToken=b612fa915eefaa06, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.8.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.8.3\lib\net40\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="zxing, Version=0.14.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicSetup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>BasicSetup.settings</DependentUpon>
+    </Compile>
+    <Compile Include="CamControl.cs" />
+    <Compile Include="ColorSetup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>ColorSetup.settings</DependentUpon>
+    </Compile>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="frmCodeScann.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCodeScann.Designer.cs">
+      <DependentUpon>frmCodeScann.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLockScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLockScreen.Designer.cs">
+      <DependentUpon>frmLockScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageHelper.cs" />
+    <Compile Include="MyLogin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MyLogin.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UserManageMenu\frmUserConsumption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManageMenu\frmUserConsumption.Designer.cs">
+      <DependentUpon>frmUserConsumption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalQueryMenu\frmConsumptionStatistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticalQueryMenu\frmConsumptionStatistical.Designer.cs">
+      <DependentUpon>frmConsumptionStatistical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalQueryMenu\frmPayStatistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticalQueryMenu\frmPayStatistical.Designer.cs">
+      <DependentUpon>frmPayStatistical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalQueryMenu\frmSmsStatistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticalQueryMenu\frmSmsStatistical.Designer.cs">
+      <DependentUpon>frmSmsStatistical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalQueryMenu\frmUserStatistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticalQueryMenu\frmUserStatistical.Designer.cs">
+      <DependentUpon>frmUserStatistical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSettingsMenu\frmBasicSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSettingsMenu\frmBasicSetup.Designer.cs">
+      <DependentUpon>frmBasicSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSettingsMenu\frmConsumptionTypeSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSettingsMenu\frmConsumptionTypeSetup.Designer.cs">
+      <DependentUpon>frmConsumptionTypeSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSettingsMenu\frmEditConsumptionType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSettingsMenu\frmEditConsumptionType.Designer.cs">
+      <DependentUpon>frmEditConsumptionType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSettingsMenu\frmEditUserLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSettingsMenu\frmEditUserLevel.Designer.cs">
+      <DependentUpon>frmEditUserLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSettingsMenu\frmUserLevelSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSettingsMenu\frmUserLevelSetup.Designer.cs">
+      <DependentUpon>frmUserLevelSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManageMenu\frmNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManageMenu\frmNewUser.Designer.cs">
+      <DependentUpon>frmNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManageMenu\frmUpdateUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManageMenu\frmUpdateUserInfo.Designer.cs">
+      <DependentUpon>frmUpdateUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManageMenu\frmUserManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManageMenu\frmUserManage.Designer.cs">
+      <DependentUpon>frmUserManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManageMenu\frmUserPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManageMenu\frmUserPay.Designer.cs">
+      <DependentUpon>frmUserPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCodeScann.resx">
+      <DependentUpon>frmCodeScann.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLockScreen.resx">
+      <DependentUpon>frmLockScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManageMenu\frmUserConsumption.resx">
+      <DependentUpon>frmUserConsumption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticalQueryMenu\frmConsumptionStatistical.resx">
+      <DependentUpon>frmConsumptionStatistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticalQueryMenu\frmPayStatistical.resx">
+      <DependentUpon>frmPayStatistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticalQueryMenu\frmSmsStatistical.resx">
+      <DependentUpon>frmSmsStatistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticalQueryMenu\frmUserStatistical.resx">
+      <DependentUpon>frmUserStatistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSettingsMenu\frmBasicSetup.resx">
+      <DependentUpon>frmBasicSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSettingsMenu\frmConsumptionTypeSetup.resx">
+      <DependentUpon>frmConsumptionTypeSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSettingsMenu\frmEditConsumptionType.resx">
+      <DependentUpon>frmEditConsumptionType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSettingsMenu\frmEditUserLevel.resx">
+      <DependentUpon>frmEditUserLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSettingsMenu\frmUserLevelSetup.resx">
+      <DependentUpon>frmUserLevelSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManageMenu\frmNewUser.resx">
+      <DependentUpon>frmNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManageMenu\frmUpdateUserInfo.resx">
+      <DependentUpon>frmUpdateUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManageMenu\frmUserManage.resx">
+      <DependentUpon>frmUserManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManageMenu\frmUserPay.resx">
+      <DependentUpon>frmUserPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="BasicSetup.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>BasicSetup.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ColorSetup.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>ColorSetup.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MyLogin.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MyLogin.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <None Include="Resources\titleLogo2.png" />
+    <None Include="Resources\titleLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
